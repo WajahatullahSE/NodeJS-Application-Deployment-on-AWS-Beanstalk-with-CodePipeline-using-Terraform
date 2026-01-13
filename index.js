@@ -6,9 +6,14 @@ app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
   response.send(`
-    <h1>Node.js Sample Application, Version 1</h1>
-    <p>Deployed on Elastic Beanstalk with codepipeline</p>
+    <h1>Node.js Sample Application, Version #02</h1>
+    <p>Deployed on Elastic Beanstalk with CodePipeline</p>
     <p>Welcome to Application!</p>
+    <hr>
+    <h3>Environment Variables:</h3>
+    <p><strong>NODE_ENV:</strong> ${process.env.NODE_ENV || 'Not set'}</p>
+    <p><strong>CUSTOM_VAR:</strong> ${process.env.CUSTOM_VAR || 'Not set'}</p>
+    <p><strong>PORT:</strong> ${process.env.PORT || '8081'}</p>
   `);
 });
 
