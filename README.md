@@ -3,7 +3,7 @@
 Terraform infrastructure for deploying a Node.js application on AWS Elastic Beanstalk with automated CI/CD using CodePipeline.
 
 ## Architecture
-
+![Architecture](./docs/architecture.png)
 
 ## Prerequisites
 
