@@ -4,12 +4,6 @@ Terraform infrastructure for deploying a Node.js application on AWS Elastic Bean
 
 ## Architecture
 
-- **VPC**: 2 AZs with public and private subnets
-- **NAT Gateway**: Single NAT in public subnet for private subnet internet access
-- **Elastic Beanstalk**: Load-balanced environment with t3.small instances (min: 2, max: 4)
-- **ALB**: Managed by EB in public subnets, routes to instances in private subnets
-- **CodePipeline**: GitHub → CodeBuild → Elastic Beanstalk
-- **CodeBuild**: Builds Node.js app with npm install
 
 ## Prerequisites
 
