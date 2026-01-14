@@ -7,7 +7,7 @@ app.use(express.static(__dirname + '/public'))
 app.get('/', function(request, response) {
   response.send(`
     <h1>Node.js Sample Application, Version 12</h1>
-    <p>Deployed on Elastic Beanstalk with CodePipeline!!</p>
+    <p>Deployed on Elastic Beanstalk with CodePipeline!</p>
     <p>Welcome to Application!</p>
     <hr>
     <h3>Environment Variables:</h3>
